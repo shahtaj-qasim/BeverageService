@@ -9,10 +9,17 @@ This can be configured via `src/main/resources/config.properties`.
 To discover the different resources, methods and data schemas use the [Swagger Editor](https://editor.swagger.io/#) and the `openapi.yaml` file.
 Also include a swagger UI resource to enable displaying swagger UI as in our demo project.
 
-## Artefacts, you have to submit
+## Artefacts
 - Source Code
 - openapi.yaml
 - insomnia.json
+
+## Technologies:
+1. Java EE
+2. Gradle
+3. REST API
+4. Swagger UI
+5. Insomnia Core
 
 # Our Approach
 
