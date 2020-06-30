@@ -1,4 +1,4 @@
-# JAX-RS REST API - SOA Assignment 1 Summer Term 2020 - Group 14
+# JAX-RS REST API 
 
 Implement a beverage store as specified in the assignment description.
 Your project must be buildable with gradle (the easiest way to achieve this is using this template).
