@@ -1,5 +1,11 @@
 package de.uniba.dsg.jaxrs;
 
+
+import de.uniba.dsg.jaxrs.Controllers.BottleController;
+import de.uniba.dsg.jaxrs.Controllers.CrateController;
+import de.uniba.dsg.jaxrs.Controllers.OrderController;
+import de.uniba.dsg.jaxrs.resources.SwaggerUI;
+
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.Produces;
@@ -15,7 +21,13 @@ public class ExamplesApi extends Application {
     @Override
     public Set<Class<?>> getClasses() {
         final Set<Class<?>> resources = new HashSet<>();
-
+        resources.add(OrderController.class);
+        resources.add(BottleController.class);
+        resources.add(CrateController.class);
+        resources.add(SwaggerUI.class);
         return resources;
+//    public String sayPlainTextHello() {
+//        return "Hello Jersey Server";
+
     }
 }

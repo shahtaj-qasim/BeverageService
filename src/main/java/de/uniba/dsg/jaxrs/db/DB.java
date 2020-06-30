@@ -1,16 +1,18 @@
 package de.uniba.dsg.jaxrs.db;
 
-import de.uniba.dsg.jaxrs.model.*;
+import de.uniba.dsg.jaxrs.model.JsonInterface;
+import de.uniba.dsg.jaxrs.model.logic.*;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class DB {
 
-    private final List<Bottle> bottles;
-    private final List<Crate> crates;
-    private final List<Order> orders;
+    public final List<Bottle> bottles;
+    public final List<Crate> crates;
+    public final List<Order> orders;
 
     public DB() {
         this.bottles = initBottles();
@@ -69,5 +71,30 @@ public class DB {
                         new OrderItem(10, this.bottles.get(2), 1)
                 )), 5.79, OrderStatus.SUBMITTED)
         ));
+    }
+
+
+    public <T> String listToJson(List<T> array) throws IOException {
+        String s = "[";
+        for (T item : array) {
+            s += item.toString();
+            if (array.indexOf(item) != array.size()-1){
+                s += ",";
+            }
+        }
+        s += "]";
+        return s;
+    }
+
+    public <T> String filterBottle(List<T> array) throws IOException {
+        String s = "[";
+        for (T item : array) {
+            s += item.toString();
+            if (array.indexOf(item) != array.size()-1){
+                s += ",";
+            }
+        }
+        s += "]";
+        return s;
     }
 }
