@@ -23,10 +23,3 @@ Separate end points for Bottle & Crate and implemented separate URI for both.
 'Insomnia_Beverages.json' is added and separate test cases (Positive and Negative) are added for 'Order APIs',
 'Bottle Service APIs' and 'Crate Service APIs'.
 
-@authors:
-Deepika Arneja
-Shavez Hameed
-Muhammad Sultan
-Muhammad Hamza Akthar
-Shahtaz Qasim
-Waleeha Shouket
